@@ -29,7 +29,7 @@ class Target < ISM::Software
         if !File.exists?("#{Ism.settings.rootPath}etc/xml/catalog")
             runXmlCatalogCommand([  "--noout",
                                     "--create",
-                                    "#{Ism.settings.rootPath}etc/xml/catalog"])
+                                    "/etc/xml/catalog"])
         end
 
         runXmlCatalogCommand([  "--noout",
@@ -37,37 +37,37 @@ class Target < ISM::Software
                                 "\"rewriteSystem\"",
                                 "\"https://cdn.docbook.org/release/xsl-nons/1.79.2\"",
                                 "\"/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2\"",
-                                "#{Ism.settings.rootPath}etc/xml/catalog"])
+                                "/etc/xml/catalog"])
         runXmlCatalogCommand([  "--noout",
                                 "--add",
                                 "\"rewriteURI\"",
                                 "\"https://cdn.docbook.org/release/xsl-nons/1.79.2\"",
                                 "\"/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2\"",
-                                "#{Ism.settings.rootPath}etc/xml/catalog"])
+                                "/etc/xml/catalog"])
         runXmlCatalogCommand([  "--noout",
                                 "--add",
                                 "\"rewriteSystem\"",
                                 "\"https://cdn.docbook.org/release/xsl-nons/current\"",
                                 "\"/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2\"",
-                                "#{Ism.settings.rootPath}etc/xml/catalog"])
+                                "/etc/xml/catalog"])
         runXmlCatalogCommand([  "--noout",
                                 "--add",
                                 "\"rewriteURI\"",
                                 "\"https://cdn.docbook.org/release/xsl-nons/current\"",
                                 "\"/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2\"",
-                                "#{Ism.settings.rootPath}etc/xml/catalog"])
+                                "/etc/xml/catalog"])
         runXmlCatalogCommand([  "--noout",
                                 "--add",
                                 "\"rewriteSystem\"",
                                 "\"http://docbook.sourceforge.net/release/xsl/current\"",
                                 "\"/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2\"",
-                                "#{Ism.settings.rootPath}etc/xml/catalog"])
+                                "/etc/xml/catalog"])
         runXmlCatalogCommand([  "--noout",
                                 "--add",
                                 "\"rewriteURI\"",
                                 "\"http://docbook.sourceforge.net/release/xsl/current\"",
                                 "\"/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2\"",
-                                "#{Ism.settings.rootPath}etc/xml/catalog"])
+                                "/etc/xml/catalog"])
     end
 
 end
