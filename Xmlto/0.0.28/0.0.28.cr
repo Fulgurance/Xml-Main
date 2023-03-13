@@ -4,6 +4,7 @@ class Target < ISM::Software
         super
         configureSource([   "--prefix=/usr"],
                             buildDirectoryPath,
+                            "",
                             {"LINKS" => "/usr/bin/links"})
     end
     
