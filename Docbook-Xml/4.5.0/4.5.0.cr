@@ -15,7 +15,7 @@ class Target < ISM::Software
     def install
         super
 
-        if !File.exists?("#{Ism.settings.rootPath}etc/xml/catalog")
+        if !File.exists?("#{Ism.settings.rootPath}etc/xml/docbook")
             runXmlCatalogCommand([  "--noout",
                                     "--create",
                                     "/etc/xml/docbook"])
