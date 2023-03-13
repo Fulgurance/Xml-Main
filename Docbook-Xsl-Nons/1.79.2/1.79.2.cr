@@ -25,7 +25,7 @@ class Target < ISM::Software
 
         makeLink("VERSION","#{Ism.settings.rootPath}usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2/VERSION.xsl",:symbolicLink)
 
-        if !File.exists("#{Ism.settings.rootPath}etc/xml/catalog")
+        if !File.exists?("#{Ism.settings.rootPath}etc/xml/catalog")
             runXmlCatalogCommand([  "--noout",
                                     "--create",
                                     "#{Ism.settings.rootPath}etc/xml/catalog"])
