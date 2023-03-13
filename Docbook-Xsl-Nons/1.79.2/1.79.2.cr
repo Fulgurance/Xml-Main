@@ -5,6 +5,7 @@ class Target < ISM::Software
 
         makeDirectory("#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}etc/xml")
         makeDirectory("#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2")
+        makeDirectory("#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/doc/docbook-xsl-nons-1.79.2")
 
         directories = [ "VERSION", "assembly", "common", "eclipse", "epub", "epub3", "extensions",
                         "fo", "highlighting", "html", "htmlhelp", "images", "javahelp", "lib",
