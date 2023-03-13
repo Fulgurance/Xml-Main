@@ -1,0 +1,25 @@
+{
+  "port": "Xml-Main",
+  "name": "Docbook-Xml",
+  "version": "4.5.0",
+  "architectures": ["x86_64"],
+  "description": "A widely used XML scheme for writing documentation and help",
+  "website": "https://docbook.org/xml/",
+  "downloadLinks": ["https://www.docbook.org/xml/4.5/docbook-xml-4.5.zip"],
+  "md5sums": ["03083e288e87a7e829e437358da7ef9e"],
+  "patchesLinks": [],
+  "installedFiles": [],
+  "dependencies": [
+    {
+      "name": "Libxml2",
+      "version": "2.9.12",
+      "options": []
+    },
+    {
+      "name": "Sgml-Common",
+      "version": "0.6.3",
+      "options": []
+    }
+  ],
+  "options": []
+}
