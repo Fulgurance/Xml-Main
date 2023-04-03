@@ -2,20 +2,22 @@ class Target < ISM::Software
     
     def configure
         super
-        configureSource([   "--prefix=/usr"],
-                            buildDirectoryPath,
-                            "",
-                            {"LINKS" => "/usr/bin/links"})
+
+        configureSource(arguments: ["--prefix=/usr"],
+                        path: buildDirectoryPath,
+                        environment: {"LINKS" => "/usr/bin/links"})
     end
     
     def build
         super
-        makeSource([Ism.settings.makeOptions],buildDirectoryPath)
+
+        makeSource(path: buildDirectoryPath)
     end
     
     def prepareInstallation
         super
-        makeSource([Ism.settings.makeOptions,"DESTDIR=#{builtSoftwareDirectoryPath}/#{Ism.settings.rootPath}","install"],buildDirectoryPath)
+
+        makeSource(["DESTDIR=#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}","install"],buildDirectoryPath)
     end
 
 end
