@@ -118,6 +118,45 @@ class Target < ISM::Software
                                 "http://www.oasis-open.org/docbook/",
                                 "file:///etc/xml/docbook",
                                 "/etc/xml/catalog"])
+
+        dtdVersions = ["4.1.2","4.2","4.3","4.4"]
+
+        dtdVersions.each do |version|
+            runXmlCatalogCommand([  "--noout",
+                                    "--add",
+                                    "public",
+                                    "\"-//OASIS//DTD DocBook XML V#{version}//EN\"",
+                                    "http://www.oasis-open.org/docbook/xml/#{version}/docbookx.dtd",
+                                    "/etc/xml/docbook"])
+
+            runXmlCatalogCommand([  "--noout",
+                                    "--add",
+                                    "rewriteSystem",
+                                    "http://www.oasis-open.org/docbook/xml/#{version}",
+                                    "file:///usr/share/xml/docbook/xml-dtd-4.5",
+                                    "/etc/xml/docbook"])
+
+            runXmlCatalogCommand([  "--noout",
+                                    "--add",
+                                    "rewriteURI",
+                                    "http://www.oasis-open.org/docbook/xml/#{version}",
+                                    "file:///usr/share/xml/docbook/xml-dtd-4.5",
+                                    "/etc/xml/docbook"])
+
+            runXmlCatalogCommand([  "--noout",
+                                    "--add",
+                                    "delegateSystem",
+                                    "http://www.oasis-open.org/docbook/xml/#{version}",
+                                    "file:///etc/xml/docbook",
+                                    "/etc/xml/catalog"])
+
+            runXmlCatalogCommand([  "--noout",
+                                    "--add",
+                                    "delegateURI",
+                                    "http://www.oasis-open.org/docbook/xml/#{version}",
+                                    "file:///etc/xml/docbook",
+                                    "/etc/xml/catalog"])
+        end
     end
 
 end
