@@ -5,9 +5,6 @@
   "architectures": ["x86_64"],
   "description": "Converts an XML file into a specified format",
   "website": "https://directory.fsf.org/wiki/Xmlto",
-  "downloadLinks": ["https://releases.pagure.org/xmlto/xmlto-0.0.28.tar.bz2"],
-  "md5sums": ["93bab48d446c826399d130d959fe676f"],
-  "patchesLinks": [],
   "installedFiles": [],
   "dependencies": [
     {
