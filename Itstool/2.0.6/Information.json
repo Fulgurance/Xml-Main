@@ -2,7 +2,9 @@
   "port": "Xml-Main",
   "name": "Itstool",
   "version": "2.0.6",
-  "architectures": ["x86_64"],
+  "architectures": [
+    "x86_64"
+  ],
   "description": "Tool to translate your XML documents with PO files",
   "website": "https://itstool.org/index.html",
   "installedFiles": [],

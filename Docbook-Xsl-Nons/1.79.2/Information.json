@@ -2,7 +2,9 @@
   "port": "Xml-Main",
   "name": "Docbook-Xsl-Nons",
   "version": "1.79.2",
-  "architectures": ["x86_64"],
+  "architectures": [
+    "x86_64"
+  ],
   "description": "XSLT 1.0 Stylesheets for DocBook",
   "website": "https://github.com/docbook/xslt10-stylesheets",
   "installedFiles": [],

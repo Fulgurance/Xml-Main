@@ -2,7 +2,9 @@
   "port": "Xml-Main",
   "name": "Xmlto",
   "version": "0.0.28",
-  "architectures": ["x86_64"],
+  "architectures": [
+    "x86_64"
+  ],
   "description": "Converts an XML file into a specified format",
   "website": "https://directory.fsf.org/wiki/Xmlto",
   "installedFiles": [],

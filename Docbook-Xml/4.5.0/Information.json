@@ -2,7 +2,9 @@
   "port": "Xml-Main",
   "name": "Docbook-Xml",
   "version": "4.5.0",
-  "architectures": ["x86_64"],
+  "architectures": [
+    "x86_64"
+  ],
   "description": "A widely used XML scheme for writing documentation and help",
   "website": "https://docbook.org/xml/",
   "installedFiles": [],

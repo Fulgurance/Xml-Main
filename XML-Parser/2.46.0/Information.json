@@ -2,7 +2,9 @@
   "port": "Xml-Main",
   "name": "XML-Parser",
   "version": "2.46.0",
-  "architectures": ["x86_64"],
+  "architectures": [
+    "x86_64"
+  ],
   "description": "Perl module for parsing XML document",
   "website": "https://github.com/chorny/XML-Parser",
   "installedFiles": [],
