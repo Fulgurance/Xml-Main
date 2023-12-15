@@ -11,12 +11,12 @@
   "dependencies": [
     {
       "name": "Libxml2",
-      "version": "2.9.12",
+      "version": ">=2.9.12",
       "options": []
     },
     {
       "name": "Sgml-Common",
-      "version": "0.6.3",
+      "version": ">=0.6.3",
       "options": []
     }
   ],
