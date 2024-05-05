@@ -19,12 +19,12 @@ class Target < ISM::Software
         moveFile("#{buildDirectoryPath(false)}README","#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/doc/docbook-xsl-nons-1.79.2/README.txt")
         moveFile(Dir["#{buildDirectoryPath(false)}RELEASE-NOTES*"],"#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/doc/docbook-xsl-nons-1.79.2")
         moveFile(Dir["#{buildDirectoryPath(false)}NEWS*"],"#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/doc/docbook-xsl-nons-1.79.2")
+
+        makeLink("VERSION","#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2/VERSION.xsl",:symbolicLink)
     end
 
     def install
         super
-
-        makeLink("VERSION","#{Ism.settings.rootPath}usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2/VERSION.xsl",:symbolicLink)
 
         if !File.exists?("#{Ism.settings.rootPath}etc/xml/catalog")
             runXmlCatalogCommand([  "--noout",
