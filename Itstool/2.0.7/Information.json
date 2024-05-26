@@ -2,16 +2,15 @@
   "port": "Xml-Main",
   "name": "Itstool",
   "version": "2.0.7",
-  "architectures": [
-    "x86_64"
-  ],
+  "architectures": ["x86_64"],
   "description": "Tool to translate your XML documents with PO files",
   "website": "https://itstool.org/index.html",
   "installedFiles": [],
   "dependencies": [
     {
+      "port": "Xml-Main",
       "name": "Docbook-Xml",
-      "version": "4.5.0",
+      "version": ">=4.5.0",
       "options": []
     }
   ],
