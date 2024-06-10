@@ -3,13 +3,13 @@ class Target < ISM::Software
     def prepareInstallation
         super
 
-        makeDirectory("#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/xml/docbook/xml-dtd-4.5")
-        makeDirectory("#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}etc/xml")
+        makeDirectory("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/xml/docbook/xml-dtd-4.5")
+        makeDirectory("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}etc/xml")
 
-        copyFile("#{buildDirectoryPath(false)}docbook.cat","#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/xml/docbook/xml-dtd-4.5/docbook.cat")
-        copyFile(Dir["#{buildDirectoryPath(false)}*.dtd"],"#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/xml/docbook/xml-dtd-4.5")
-        copyDirectory("#{buildDirectoryPath(false)}ent","#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/xml/docbook/xml-dtd-4.5/ent")
-        copyFile(Dir["#{buildDirectoryPath(false)}*.mod"],"#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/xml/docbook/xml-dtd-4.5")
+        copyFile("#{buildDirectoryPath}docbook.cat","#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/xml/docbook/xml-dtd-4.5/docbook.cat")
+        copyFile(Dir["#{buildDirectoryPath}*.dtd"],"#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/xml/docbook/xml-dtd-4.5")
+        copyDirectory("#{buildDirectoryPath}ent","#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/xml/docbook/xml-dtd-4.5/ent")
+        copyFile(Dir["#{buildDirectoryPath}*.mod"],"#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/xml/docbook/xml-dtd-4.5")
     end
 
     def install

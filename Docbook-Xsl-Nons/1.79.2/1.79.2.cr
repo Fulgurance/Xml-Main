@@ -3,9 +3,9 @@ class Target < ISM::Software
     def prepareInstallation
         super
 
-        makeDirectory("#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}etc/xml")
-        makeDirectory("#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2")
-        makeDirectory("#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/doc/docbook-xsl-nons-1.79.2")
+        makeDirectory("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}etc/xml")
+        makeDirectory("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2")
+        makeDirectory("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/doc/docbook-xsl-nons-1.79.2")
 
         directories = [ "VERSION", "assembly", "common", "eclipse", "epub", "epub3", "extensions",
                         "fo", "highlighting", "html", "htmlhelp", "images", "javahelp", "lib",
@@ -13,14 +13,14 @@ class Target < ISM::Software
                         "tools", "webhelp", "website", "xhtml", "xhtml-1_1", "xhtml5"]
 
         directories.each do |directory|
-            copyDirectory("#{buildDirectoryPath(false)}#{directory}","#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2")
+            copyDirectory("#{buildDirectoryPath}#{directory}","#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2")
         end
 
-        moveFile("#{buildDirectoryPath(false)}README","#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/doc/docbook-xsl-nons-1.79.2/README.txt")
-        moveFile(Dir["#{buildDirectoryPath(false)}RELEASE-NOTES*"],"#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/doc/docbook-xsl-nons-1.79.2")
-        moveFile(Dir["#{buildDirectoryPath(false)}NEWS*"],"#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/doc/docbook-xsl-nons-1.79.2")
+        moveFile("#{buildDirectoryPath}README","#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/doc/docbook-xsl-nons-1.79.2/README.txt")
+        moveFile(Dir["#{buildDirectoryPath}RELEASE-NOTES*"],"#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/doc/docbook-xsl-nons-1.79.2")
+        moveFile(Dir["#{buildDirectoryPath}NEWS*"],"#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/doc/docbook-xsl-nons-1.79.2")
 
-        makeLink("VERSION","#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2/VERSION.xsl",:symbolicLink)
+        makeLink("VERSION","#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2/VERSION.xsl",:symbolicLink)
     end
 
     def install
