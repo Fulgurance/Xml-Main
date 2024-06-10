@@ -7,9 +7,9 @@ class Target < ISM::Software
         makeDirectory("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}etc/xml")
 
         copyFile("#{buildDirectoryPath}docbook.cat","#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/xml/docbook/xml-dtd-4.5/docbook.cat")
-        copyFile(Dir["#{buildDirectoryPath}*.dtd"],"#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/xml/docbook/xml-dtd-4.5")
+        copyFile("#{buildDirectoryPath}*.dtd","#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/xml/docbook/xml-dtd-4.5")
         copyDirectory("#{buildDirectoryPath}ent","#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/xml/docbook/xml-dtd-4.5/ent")
-        copyFile(Dir["#{buildDirectoryPath}*.mod"],"#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/xml/docbook/xml-dtd-4.5")
+        copyFile("#{buildDirectoryPath}*.mod","#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/xml/docbook/xml-dtd-4.5")
     end
 
     def install

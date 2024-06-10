@@ -17,8 +17,8 @@ class Target < ISM::Software
         end
 
         moveFile("#{buildDirectoryPath}README","#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/doc/docbook-xsl-nons-1.79.2/README.txt")
-        moveFile(Dir["#{buildDirectoryPath}RELEASE-NOTES*"],"#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/doc/docbook-xsl-nons-1.79.2")
-        moveFile(Dir["#{buildDirectoryPath}NEWS*"],"#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/doc/docbook-xsl-nons-1.79.2")
+        moveFile("#{buildDirectoryPath}RELEASE-NOTES*","#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/doc/docbook-xsl-nons-1.79.2")
+        moveFile("#{buildDirectoryPath}NEWS*","#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/doc/docbook-xsl-nons-1.79.2")
 
         makeLink("VERSION","#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2/VERSION.xsl",:symbolicLink)
     end
