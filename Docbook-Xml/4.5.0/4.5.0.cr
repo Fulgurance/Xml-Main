@@ -52,7 +52,7 @@ class Target < ISM::Software
                                         public                                                          \
                                         \"-//OASIS//ELEMENTS DocBook XML Information Pool V4.5//EN\"    \
                                         file:///usr/share/xml/docbook/xml-dtd-4.5/dbpoolx.mod           \
-                                        /etc/xml/docbook"])
+                                        /etc/xml/docbook")
 
         runXmlCatalogCommand(arguments: "--noout                                                        \
                                         --add                                                           \
