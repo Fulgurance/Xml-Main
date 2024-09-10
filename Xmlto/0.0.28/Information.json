@@ -27,7 +27,22 @@
     }
   ],
   "kernelDependencies": [],
-  "options": [],
+  "options": [
+    {
+      "name": "Links",
+      "description": "Enable links support",
+      "active": false,
+      "dependencies": [
+        {
+          "port": "WebBrowsers-Main",
+          "name": "Links",
+          "version": ">=2.29.0",
+          "options": []
+        }
+      ],
+      "kernelDependencies": []
+    }
+  ],
   "uniqueDependencies": [],
   "uniqueOptions": [],
   "selectedDependencies": [],
