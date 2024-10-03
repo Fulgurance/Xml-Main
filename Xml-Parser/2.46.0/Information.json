@@ -1,6 +1,6 @@
 {
   "port": "Xml-Main",
-  "name": "XML-Parser",
+  "name": "Xml-Parser",
   "version": "2.46.0",
   "architectures": ["x86_64"],
   "description": "Perl module for parsing XML document",
