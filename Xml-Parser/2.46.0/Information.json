@@ -8,6 +8,12 @@
   "installedFiles": [],
   "dependencies": [
     {
+      "port": "ProgrammingLanguages-Main",
+      "name": "Perl",
+      "version": ">=5.40.0",
+      "options": []
+    },
+    {
       "port": "Xml-Main",
       "name": "Expat",
       "version": ">=2.5.0",
