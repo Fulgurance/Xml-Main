@@ -1,0 +1,19 @@
+PORT
+    Xml-Main
+NAME
+    Itstool
+VERSION
+    2.0.7
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Tool to translate your XML documents with PO files
+WEBSITE
+    https://itstool.org/index.html
+DEPENDENCIES
+        @Xml-Main:Docbook-Xml>=4.5.0
+KERNELDEPENDENCIES
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

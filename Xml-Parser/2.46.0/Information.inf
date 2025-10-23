@@ -1,0 +1,20 @@
+PORT
+    Xml-Main
+NAME
+    Xml-Parser
+VERSION
+    2.46.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Perl module for parsing XML document
+WEBSITE
+    https://github.com/chorny/XML-Parser
+DEPENDENCIES
+        @ProgrammingLanguages-Main:Perl>=5.40.0
+        @Xml-Main:Expat>=2.5.0
+KERNELDEPENDENCIES
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

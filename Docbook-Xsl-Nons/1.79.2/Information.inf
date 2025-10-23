@@ -1,0 +1,19 @@
+PORT
+    Xml-Main
+NAME
+    Docbook-Xsl-Nons
+VERSION
+    1.79.2
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    XSLT 1.0 Stylesheets for DocBook
+WEBSITE
+    https://github.com/docbook/xslt10-stylesheets
+DEPENDENCIES
+        @BaseLibraries-Main:Libxml2>=2.9.12
+KERNELDEPENDENCIES
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

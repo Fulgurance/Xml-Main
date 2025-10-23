@@ -1,0 +1,28 @@
+PORT
+    Xml-Main
+NAME
+    Xmlto
+VERSION
+    0.0.28
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Converts an XML file into a specified format
+WEBSITE
+    https://directory.fsf.org/wiki/Xmlto
+DEPENDENCIES
+        @Xml-Main:Docbook-Xml>=4.5.0
+        @Xml-Main:Docbook-Xsl-Nons>=1.79.2
+        @BaseLibraries-Main:Libxslt>=1.1.34
+KERNELDEPENDENCIES
+OPTIONS
+    name: Links
+    description: Enable links support
+    active: false
+    dependencies:
+        @WebBrowsers-Main:Links>=2.29.0
+    kernelDependencies:
+
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

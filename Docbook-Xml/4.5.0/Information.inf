@@ -1,0 +1,20 @@
+PORT
+    Xml-Main
+NAME
+    Docbook-Xml
+VERSION
+    4.5.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    A widely used XML scheme for writing documentation and help
+WEBSITE
+    https://docbook.org/xml/
+DEPENDENCIES
+        @BaseLibraries-Main:Libxml2>=2.9.12
+        @Sgml-Main:Sgml-Common>=0.6.3
+KERNELDEPENDENCIES
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES
